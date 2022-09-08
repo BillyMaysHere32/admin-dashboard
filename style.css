@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(207, 230, 230);
+}
+.leftSidebarContainer{
+    width: 33%;
+    border-color: black;
+    background-color: rgb(35, 184, 233);
+}
+
+.rightHeader{
+    width: 66%;
+    box-shadow: 0 10px 20px -2px rgb(22, 22, 22);
+    border-color: black;
+    background-color: rgb(247, 249, 249);
+}
+
+.rightSubContainer{
+    width: 66%;
+    border-color: black;
+}
+
+.leftGridContainer {
+    display:grid;
+}
+
+.item{
+
+}
+
+.rightFlexContainer{
+    display: flex;
+}
