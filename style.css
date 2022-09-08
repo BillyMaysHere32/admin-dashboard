@@ -1,8 +1,7 @@
 :root {
     --gray-1: rgb(247, 249, 249);
-    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-      0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow: 2px 2px 20px 1px rgb(22, 22, 22);
+    --blue: #0ea5e9;
 }
 
 body {
@@ -20,20 +19,18 @@ body {
    grid-template-columns: 20vw 60vw;
 
 }
-.leftSidebarContainer{
-    background-color: rgb(35, 184, 233);
-}
 
 .rightContentContainer{
     display: grid;
     justify-items: stretch;
     align-content: stretch;
     grid-template-rows: 20vh 80vh;
+    background-color: rgb(210, 205, 205);
 }
 
     .rightHeader{
-        box-shadow: 0 10px 20px -2px rgb(22, 22, 22);
         background-color:var(--gray-1);
+        box-shadow: 0 4px 2px -2px gray;
     }
 
     .rightSubContainer{
@@ -42,14 +39,12 @@ body {
         align-content: stretch;
         grid-template-columns: 40vw 20vw;
         overflow: auto;
-        padding: 60px 20px 60px 20px;
-        background-color: rgb(210, 205, 205);
+        padding: 0px 20px 60px 20px;
+        
     }
 
-        .leftGridContainer {
+        .itemGrid {
             display: grid;
-            justify-items: stretch;
-            align-content: stretch;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             grid-auto-rows: 160px;
             grid-gap: 20px;
@@ -58,15 +53,63 @@ body {
             .item{
                 background-color:var(--gray-1);
                 border-radius: 10px;
+                box-shadow: var(--shadow);
+            }
+            .rightGridContainer {
+                padding: 0px 20px 60px 20px;
             }
 
-        .rightFlexContainer{
+                .rightSideBar{
+                    display: grid;
+                    grid-template-columns: 15vw;
+                    grid-auto-rows: 200px; 
+                    grid-gap: 20px;
+                    
+                }
+
+                    .announcementsContainer,.trendingContainer {
+                        background-color:var(--gray-1);
+                        box-shadow: var(--shadow);
+                        border-radius: 10px;
+                    }
             
-        }
+.leftSidebarContainer{
+    background-color: var(--blue);
+    color: white;
+    
+}                    
 
-            .announcementsContainer{
+    .links {
+        display: grid;
+        justify-items: start;
+        gap: 1em;
+        background-color: blueviolet;
+    }
 
-            }
-            .trendingContainer {
-                
-            }
+    .link {
+        background-color:olivedrab;
+    }
+
+    .sidebarLink {
+        display: flex;
+        gap: 1em;
+    }
+
+ul {
+    list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;  
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    font-size: 1.75rem;
+  }
+h2 > [class^='material-icons'] {
+    font-size: 1.4em;
+    margin-right: 0.25em;
+  }
