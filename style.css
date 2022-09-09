@@ -1,5 +1,5 @@
 :root {
-    --gray-1: rgb(247, 249, 249);
+    --gray: rgb(247, 249, 249);
     --shadow: 2px 2px 20px 1px rgb(22, 22, 22);
     --blue: #0ea5e9;
 }
@@ -16,7 +16,7 @@ body {
    width: 80vw;
    display: grid;
    grid-template-rows: 100vh;
-   grid-template-columns: 20vw 60vw;
+   grid-template-columns: minmax(240px, 20vh) 60vw;
 
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
     .rightHeader{
-        background-color:var(--gray-1);
+        background-color:var(--gray);
         box-shadow: 0 4px 2px -2px gray;
     }
 
@@ -51,9 +51,10 @@ body {
         }
 
             .item{
-                background-color:var(--gray-1);
+                background-color:var(--gray);
                 border-radius: 10px;
                 box-shadow: var(--shadow);
+                border-left: 6px solid rgb(224, 172, 42);
             }
             .rightGridContainer {
                 padding: 0px 20px 60px 20px;
@@ -68,32 +69,28 @@ body {
                 }
 
                     .announcementsContainer,.trendingContainer {
-                        background-color:var(--gray-1);
+                        background-color:var(--gray);
                         box-shadow: var(--shadow);
                         border-radius: 10px;
                     }
             
 .leftSidebarContainer{
     background-color: var(--blue);
-    color: white;
-    
+    color: white;   
 }                    
 
     .links {
         display: grid;
-        justify-items: start;
-        gap: 1em;
-        background-color: blueviolet;
-    }
-
-    .link {
-        background-color:olivedrab;
-    }
-
-    .sidebarLink {
-        display: flex;
         gap: 1em;
     }
+
+        .sidebarLink {
+            display: flex;
+            gap: 1em;
+        }
+        .sidebarLink > [class^='material-icons'] {
+            font-size: 1.5em;
+        }
 
 ul {
     list-style: none;
