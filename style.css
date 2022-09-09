@@ -10,6 +10,8 @@ body {
     display: grid;
     justify-items: center;
     align-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 
 .content {
@@ -85,13 +87,14 @@ body {
             grid-auto-flow: column;
         }
 
-            .profile {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-auto-flow: column;
-                height: 12vh;
-                justify-self: left;
-            }
+        .profile {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-auto-flow: column;
+            height: 12vh;
+            justify-self: left;
+            overflow: auto;
+        }
 
                 .userProfile {
                     height: 12vh;
@@ -154,24 +157,48 @@ body {
                 border-radius: 10px;
                 box-shadow: var(--shadow);
                 border-left: 6px solid rgb(224, 172, 42);
+                overflow: auto;
+                padding-left: .5rem;
+            }
+
+            .itemTitle {
+                font-size: medium;
+                font-weight: 600;
+                padding-bottom: 0.5rem;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
             .rightGridContainer {
                 padding: 0px 20px 60px 20px;
             }
 
-                .rightSideBar{
-                    display: grid;
-                    grid-template-columns: 15vw;
-                    grid-auto-rows: 200px; 
-                    grid-gap: 20px;
-                    
+            .announcementsContainer,.trendingContainer {
+                display: grid;
+                grid-template-columns: 15vw;
+                grid-auto-rows: 200px;     
+            }
+
+                .announcementsContent,.trendingContent {
+                    background-color:var(--gray);
+                    box-shadow: var(--shadow);
+                    border-radius: 10px;
+                    overflow: auto; 
+                    padding: 0 1rem 1rem 1rem;  
                 }
 
-                    .announcementsContainer,.trendingContainer {
-                        background-color:var(--gray);
-                        box-shadow: var(--shadow);
-                        border-radius: 10px;
-                    }
+                .annItemTitle {
+                    font-weight: 600;
+                    font-size: x-small;
+                }
+
+                .annItem {
+                    border-bottom: grey;
+                    padding-bottom: 1rem;
+                    padding-top: 1rem;
+                    font-size: xx-small;
+                    border-bottom: 2px solid grey
+                }
+
+            
             
 .leftSidebarContainer{
     background-color: var(--blue);
