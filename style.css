@@ -10,7 +10,6 @@ body {
     display: grid;
     justify-items: center;
     align-content: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
 
@@ -196,6 +195,27 @@ body {
                     padding-top: 1rem;
                     font-size: xx-small;
                     border-bottom: 2px solid grey
+                }
+
+                .trendingContent { 
+
+                  
+                }
+                .trendProfile{
+                    
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-auto-flow: column;
+                    justify-self: left;
+                    overflow: auto;
+                }
+
+                .userTrend{
+                    font-size: xx-small;
+                    padding: -1rem;
+                }
+                .trendProfile .img {
+                    padding-top: 1rem;
                 }
 
             
