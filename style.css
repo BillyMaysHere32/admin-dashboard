@@ -97,6 +97,8 @@ body {
 
                 .userProfile {
                     height: 12vh;
+                    display: grid;
+                    grid-template-rows: 20%;
                 }
 
                     .greeting {
@@ -208,14 +210,22 @@ body {
                     grid-auto-flow: column;
                     justify-self: left;
                     overflow: auto;
+                    padding-top: 1rem;
+                    height: 6vh;
                 }
 
                 .userTrend{
+                    display: grid;
+                    grid-template-rows: 40%;
                     font-size: xx-small;
-                    padding: -1rem;
+                    height: 50%;
+                    
                 }
+
                 .trendProfile .img {
-                    padding-top: 1rem;
+                    height: 40px;
+                    width: 40px;
+                    margin-left: 0rem;
                 }
 
             
